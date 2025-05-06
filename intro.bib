@@ -1,61 +1,351 @@
 @inproceedings{optuna_2019,
-    title={Optuna: A Next-generation Hyperparameter Optimization Framework},
-    author={Akiba, Takuya and Sano, Shotaro and Yanase, Toshihiko and Ohta, Takeru and Koyama, Masanori},
-    booktitle={Proceedings of the 25th {ACM} {SIGKDD} International Conference on Knowledge Discovery and Data Mining},
-    year={2019}
+	title = {Optuna: A Next-generation Hyperparameter Optimization Framework
+	         },
+	author = {Akiba, Takuya and Sano, Shotaro and Yanase, Toshihiko and Ohta
+	          , Takeru and Koyama, Masanori},
+	booktitle = {Proceedings of the 25th {ACM} {SIGKDD} International
+	             Conference on Knowledge Discovery and Data Mining},
+	year = {2019},
 }
 
 @article{chatgpt_incomplete,
-    author = {Radford, Alex and Narasimhan, Karthik and Salimans, Tim
-    title = ,
-    journal = ,
-    year = 
+	author = {Radford, Alex and Narasimhan, Karthik and Salimans, Tim title
+	          = , journal = , year = },
+}@article{word2vec_preprint,
+	title = {Efficient Estimation of Word Representations in Vector Space},
+	url = {http://arxiv.org/abs/1301.3781},
+	DOI = {10.48550/arXiv.1301.3781},
+	abstractNote = {We propose two novel model architectures for computing
+	                continuous vector representations of words from very
+	                large data sets. The quality of these representations is
+	                measured in a word similarity task, and the results are
+	                compared to the previously best performing techniques
+	                based on different types of neural networks. We observe
+	                large improvements in accuracy at much lower
+	                computational cost, i.e. it takes less than a day to
+	                learn high quality word vectors from a 1.6 billion words
+	                data set. Furthermore, we show that these vectors provide
+	                state-of-the-art performance on our test set for
+	                measuring syntactic and semantic word similarities.},
+	note = {arXiv:1301.3781 [cs]},
+	number = {arXiv:1301.3781},
+	publisher = {arXiv},
+	author = {Mikolov, Tomas and Chen, Kai and Corrado, Greg and Dean,
+	          Jeffrey},
+	year = {2013},
+	month = sep,
 }
 
- @article{word2vec_preprint, title={Efficient Estimation of Word Representations in Vector Space}, url={http://arxiv.org/abs/1301.3781}, DOI={10.48550/arXiv.1301.3781}, abstractNote={We propose two novel model architectures for computing continuous vector representations of words from very large data sets. The quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks. We observe large improvements in accuracy at much lower computational cost, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set. Furthermore, we show that these vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.}, note={arXiv:1301.3781 [cs]}, number={arXiv:1301.3781}, publisher={arXiv}, author={Mikolov, Tomas and Chen, Kai and Corrado, Greg and Dean, Jeffrey}, year={2013}, month=sep }
+ @inproceedings{word2vec_official,
+	title = {Distributed Representations of Words and Phrases and their
+	         Compositionality},
+	volume = {26},
+	url = {
+	       https://proceedings.neurips.cc/paper/2013/hash/9aa42b31882ec039965f3c4923ce901b-Abstract.html
+	       },
+	abstractNote = {The recently introduced continuous Skip-gram model is an
+	                efficient method for learning high-quality distributed
+	                vector representations that capture a large number of
+	                precise syntactic and semantic word relationships. In
+	                this paper we present several improvements that make the
+	                Skip-gram model more expressive and enable it to learn
+	                higher quality vectors more rapidly. We show that by
+	                subsampling frequent words we obtain significant speedup,
+	                and also learn higher quality representations as measured
+	                by our tasks. We also introduce Negative Sampling, a
+	                simplified variant of Noise Contrastive Estimation (NCE)
+	                that learns more accurate vectors for frequent words
+	                compared to the hierarchical softmax. An inherent
+	                limitation of word representations is their indifference
+	                to word order and their inability to represent idiomatic
+	                phrases. For example, the meanings of Canada’’ and "Air’’
+	                cannot be easily combined to obtain "Air Canada’’.
+	                Motivated by this example, we present a simple and
+	                efficient method for finding phrases, and show that their
+	                vector representations can be accurately learned by the
+	                Skip-gram model. "},
+	booktitle = {Advances in Neural Information Processing Systems},
+	publisher = {Curran Associates, Inc.},
+	author = {Mikolov, Tomas and Sutskever, Ilya and Chen, Kai and Corrado,
+	          Greg S and Dean, Jeff},
+	year = {2013},
+}
 
- @inproceedings{word2vec_official, title={Distributed Representations of Words and Phrases and their Compositionality}, volume={26}, url={https://proceedings.neurips.cc/paper/2013/hash/9aa42b31882ec039965f3c4923ce901b-Abstract.html}, abstractNote={The recently introduced continuous Skip-gram model is an efficient method for learning high-quality distributed vector representations that capture a large number of precise syntactic and semantic word relationships.  In this paper we present several improvements that make the Skip-gram model more expressive and enable it to learn higher quality vectors more rapidly.  We show that by subsampling frequent words we obtain significant speedup,  and also learn higher quality representations as measured by our tasks. We also introduce Negative Sampling, a simplified variant of Noise Contrastive Estimation (NCE) that learns more accurate vectors for frequent words compared to the hierarchical softmax.   An inherent limitation of word representations is their indifference to word order and their inability to represent idiomatic phrases.  For example, the meanings of Canada’’ and "Air’’ cannot be easily combined to obtain "Air Canada’’.  Motivated by this example, we present a simple and efficient method for finding phrases, and show that their vector representations can be accurately learned by the Skip-gram model. "}, booktitle={Advances in Neural Information Processing Systems}, publisher={Curran Associates, Inc.}, author={Mikolov, Tomas and Sutskever, Ilya and Chen, Kai and Corrado, Greg S and Dean, Jeff}, year={2013} }
-
- @inproceedings{BERT, address={Minneapolis, Minnesota}, title={BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding}, url={https://aclanthology.org/N19-1423/}, DOI={10.18653/v1/N19-1423}, abstractNote={We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5 (7.7 point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).}, booktitle={Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)}, publisher={Association for Computational Linguistics}, author={Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina}, editor={Burstein, Jill and Doran, Christy and Solorio, Thamar}, year={2019}, month=jun, pages={4171–4186} }
+ @inproceedings{BERT,
+	address = {Minneapolis, Minnesota},
+	title = {BERT: Pre-training of Deep Bidirectional Transformers for
+	         Language Understanding},
+	url = {https://aclanthology.org/N19-1423/},
+	DOI = {10.18653/v1/N19-1423},
+	abstractNote = {We introduce a new language representation model called
+	                BERT, which stands for Bidirectional Encoder
+	                Representations from Transformers. Unlike recent language
+	                representation models (Peters et al., 2018a; Radford et
+	                al., 2018), BERT is designed to pre-train deep
+	                bidirectional representations from unlabeled text by
+	                jointly conditioning on both left and right context in
+	                all layers. As a result, the pre-trained BERT model can
+	                be fine-tuned with just one additional output layer to
+	                create state-of-the-art models for a wide range of tasks,
+	                such as question answering and language inference,
+	                without substantial task-specific architecture
+	                modifications. BERT is conceptually simple and
+	                empirically powerful. It obtains new state-of-the-art
+	                results on eleven natural language processing tasks,
+	                including pushing the GLUE score to 80.5 (7.7 point
+	                absolute improvement), MultiNLI accuracy to 86.7% (4.6%
+	                absolute improvement), SQuAD v1.1 question answering Test
+	                F1 to 93.2 (1.5 point absolute improvement) and SQuAD
+	                v2.0 Test F1 to 83.1 (5.1 point absolute improvement).},
+	booktitle = {Proceedings of the 2019 Conference of the North American
+	             Chapter of the Association for Computational Linguistics:
+	             Human Language Technologies, Volume 1 (Long and Short
+	             Papers)},
+	publisher = {Association for Computational Linguistics},
+	author = {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and
+	          Toutanova, Kristina},
+	editor = {Burstein, Jill and Doran, Christy and Solorio, Thamar},
+	year = {2019},
+	month = jun,
+	pages = {4171–4186},
+}
 
 
 
 @inproceedings{vaswani_attention_2017,
-    title = {Attention is {All} you {Need}},
-    volume = {30},
-    url = {https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf},
-    booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
-    publisher = {Curran Associates, Inc.},
-    author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, Ł ukasz and Polosukhin, Illia},
-    editor = {Guyon, I. and Luxburg, U. Von and Bengio, S. and Wallach, H. and Fergus, R. and Vishwanathan, S. and Garnett, R.},
-    year = {2017},
+	title = {Attention is {All} you {Need}},
+	volume = {30},
+	url = {
+	       https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
+	       },
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	publisher = {Curran Associates, Inc.},
+	author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and
+	          Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser
+	          , Ł ukasz and Polosukhin, Illia},
+	editor = {Guyon, I. and Luxburg, U. Von and Bengio, S. and Wallach, H.
+	          and Fergus, R. and Vishwanathan, S. and Garnett, R.},
+	year = {2017},
 }
 @misc{wu_googles_2016,
-    title = {Google's {Neural} {Machine} {Translation} {System}: {Bridging} the {Gap} between {Human} and {Machine} {Translation}},
-    shorttitle = {Google's {Neural} {Machine} {Translation} {System}},
-    url = {http://arxiv.org/abs/1609.08144},
-    doi = {10.48550/arXiv.1609.08144},
-    abstract = {Neural Machine Translation (NMT) is an end-to-end learning approach for automated translation, with the potential to overcome many of the weaknesses of conventional phrase-based translation systems. Unfortunately, NMT systems are known to be computationally expensive both in training and in translation inference. Also, most NMT systems have difficulty with rare words. These issues have hindered NMT's use in practical deployments and services, where both accuracy and speed are essential. In this work, we present GNMT, Google's Neural Machine Translation system, which attempts to address many of these issues. Our model consists of a deep LSTM network with 8 encoder and 8 decoder layers using attention and residual connections. To improve parallelism and therefore decrease training time, our attention mechanism connects the bottom layer of the decoder to the top layer of the encoder. To accelerate the final translation speed, we employ low-precision arithmetic during inference computations. To improve handling of rare words, we divide words into a limited set of common sub-word units ("wordpieces") for both input and output. This method provides a good balance between the flexibility of "character"-delimited models and the efficiency of "word"-delimited models, naturally handles translation of rare words, and ultimately improves the overall accuracy of the system. Our beam search technique employs a length-normalization procedure and uses a coverage penalty, which encourages generation of an output sentence that is most likely to cover all the words in the source sentence. On the WMT'14 English-to-French and English-to-German benchmarks, GNMT achieves competitive results to state-of-the-art. Using a human side-by-side evaluation on a set of isolated simple sentences, it reduces translation errors by an average of 60\% compared to Google's phrase-based production system.},
-    urldate = {2025-04-23},
-    publisher = {arXiv},
-    author = {Wu, Yonghui and Schuster, Mike and Chen, Zhifeng and Le, Quoc V. and Norouzi, Mohammad and Macherey, Wolfgang and Krikun, Maxim and Cao, Yuan and Gao, Qin and Macherey, Klaus and Klingner, Jeff and Shah, Apurva and Johnson, Melvin and Liu, Xiaobing and Kaiser, Łukasz and Gouws, Stephan and Kato, Yoshikiyo and Kudo, Taku and Kazawa, Hideto and Stevens, Keith and Kurian, George and Patil, Nishant and Wang, Wei and Young, Cliff and Smith, Jason and Riesa, Jason and Rudnick, Alex and Vinyals, Oriol and Corrado, Greg and Hughes, Macduff and Dean, Jeffrey},
-    month = oct,
-    year = {2016},
-    note = {arXiv:1609.08144 [cs]},
-    keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning},
+	title = {Google's {Neural} {Machine} {Translation} {System}: {Bridging}
+	         the {Gap} between {Human} and {Machine} {Translation}},
+	shorttitle = {Google's {Neural} {Machine} {Translation} {System}},
+	url = {http://arxiv.org/abs/1609.08144},
+	doi = {10.48550/arXiv.1609.08144},
+	abstract = {Neural Machine Translation (NMT) is an end-to-end learning
+	            approach for automated translation, with the potential to
+	            overcome many of the weaknesses of conventional phrase-based
+	            translation systems. Unfortunately, NMT systems are known to
+	            be computationally expensive both in training and in
+	            translation inference. Also, most NMT systems have difficulty
+	            with rare words. These issues have hindered NMT's use in
+	            practical deployments and services, where both accuracy and
+	            speed are essential. In this work, we present GNMT, Google's
+	            Neural Machine Translation system, which attempts to address
+	            many of these issues. Our model consists of a deep LSTM
+	            network with 8 encoder and 8 decoder layers using attention
+	            and residual connections. To improve parallelism and
+	            therefore decrease training time, our attention mechanism
+	            connects the bottom layer of the decoder to the top layer of
+	            the encoder. To accelerate the final translation speed, we
+	            employ low-precision arithmetic during inference
+	            computations. To improve handling of rare words, we divide
+	            words into a limited set of common sub-word units ("
+	            wordpieces") for both input and output. This method provides
+	            a good balance between the flexibility of "character"
+	            -delimited models and the efficiency of "word"-delimited
+	            models, naturally handles translation of rare words, and
+	            ultimately improves the overall accuracy of the system. Our
+	            beam search technique employs a length-normalization
+	            procedure and uses a coverage penalty, which encourages
+	            generation of an output sentence that is most likely to cover
+	            all the words in the source sentence. On the WMT'14
+	            English-to-French and English-to-German benchmarks, GNMT
+	            achieves competitive results to state-of-the-art. Using a
+	            human side-by-side evaluation on a set of isolated simple
+	            sentences, it reduces translation errors by an average of 60
+	            \% compared to Google's phrase-based production system.},
+	urldate = {2025-04-23},
+	publisher = {arXiv},
+	author = {Wu, Yonghui and Schuster, Mike and Chen, Zhifeng and Le, Quoc
+	          V. and Norouzi, Mohammad and Macherey, Wolfgang and Krikun,
+	          Maxim and Cao, Yuan and Gao, Qin and Macherey, Klaus and
+	          Klingner, Jeff and Shah, Apurva and Johnson, Melvin and Liu,
+	          Xiaobing and Kaiser, Łukasz and Gouws, Stephan and Kato,
+	          Yoshikiyo and Kudo, Taku and Kazawa, Hideto and Stevens, Keith
+	          and Kurian, George and Patil, Nishant and Wang, Wei and Young,
+	          Cliff and Smith, Jason and Riesa, Jason and Rudnick, Alex and
+	          Vinyals, Oriol and Corrado, Greg and Hughes, Macduff and Dean,
+	          Jeffrey},
+	month = oct,
+	year = {2016},
+	note = {arXiv:1609.08144 [cs]},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science
+	            - Computation and Language, Computer Science - Machine
+	            Learning},
 }
 
 % Bert model by deutsche Telekom
 
 @online{german_bert,
-  author = {Philip May, Deutsche Telekom AG},
-  title = {gbert-large-paraphrase-cosinen},
-  year = 2023,
-  url = {https://huggingface.co/deutsche-telekom/gbert-large-paraphrase-cosine},
-  urldate = {2025-04-24}
+	author = {Philip May, Deutsche Telekom AG},
+	title = {gbert-large-paraphrase-cosinen},
+	year = 2023,
+	url = {
+	       https://huggingface.co/deutsche-telekom/gbert-large-paraphrase-cosine
+	       },
+	urldate = {2025-04-24},
 }
 
 % Knowledge Graph Examples
- @inproceedings{Bellomarini_Magnanimi_Nissl_Sallinger_2021, address={Cham}, title={Neither in the Programs Nor in the Data: Mining the Hidden Financial Knowledge with Knowledge Graphs and Reasoning}, ISBN={978-3-030-66981-2}, DOI={10.1007/978-3-030-66981-2_10}, abstractNote={Vadalog is a logic-based reasoning language for modern AI solutions, in particular for Knowledge Graph (KG) systems. It is showing very effective applicability in the financial realm, with success stories in a vast range of scenarios, including: creditworthiness evaluation, analysis of company ownership and control, prevention of potential takeovers of strategic companies, prediction of hidden links between economic entities, detection of family businesses, smart anonymization of financial data, fraud detection and anti-money laundering. In this work, we first focus on the language itself, giving a self-contained and accessible introduction to Warded Datalog+/-, the formalism at the core of Vadalog, as well as to the Vadalog system, a state-of-the-art KG system. We show the essentials of logic-based reasoning in KGs and touch on recent advances where logical inference works in conjunction with the inductive methods of machine learning and data mining. Leveraging our experience with KGs in Banca d’Italia, we then focus on some relevant financial applications and explain how KGs enable the development of novel solutions, able to combine the knowledge mined from the data with the domain awareness of the business experts.}, booktitle={Mining Data for Financial Applications}, publisher={Springer International Publishing}, author={Bellomarini, Luigi and Magnanimi, Davide and Nissl, Markus and Sallinger, Emanuel}, editor={Bitetta, Valerio and Bordino, Ilaria and Ferretti, Andrea and Gullo, Francesco and Ponti, Giovanni and Severini, Lorenzo}, year={2021}, pages={119–134}, language={en} }
+ @inproceedings{Bellomarini_Magnanimi_Nissl_Sallinger_2021,
+	address = {Cham},
+	title = {Neither in the Programs Nor in the Data: Mining the Hidden
+	         Financial Knowledge with Knowledge Graphs and Reasoning},
+	ISBN = {978-3-030-66981-2},
+	DOI = {10.1007/978-3-030-66981-2_10},
+	abstractNote = {Vadalog is a logic-based reasoning language for modern
+	                AI solutions, in particular for Knowledge Graph (KG)
+	                systems. It is showing very effective applicability in
+	                the financial realm, with success stories in a vast range
+	                of scenarios, including: creditworthiness evaluation,
+	                analysis of company ownership and control, prevention of
+	                potential takeovers of strategic companies, prediction of
+	                hidden links between economic entities, detection of
+	                family businesses, smart anonymization of financial data,
+	                fraud detection and anti-money laundering. In this work,
+	                we first focus on the language itself, giving a
+	                self-contained and accessible introduction to Warded
+	                Datalog+/-, the formalism at the core of Vadalog, as well
+	                as to the Vadalog system, a state-of-the-art KG system.
+	                We show the essentials of logic-based reasoning in KGs
+	                and touch on recent advances where logical inference
+	                works in conjunction with the inductive methods of
+	                machine learning and data mining. Leveraging our
+	                experience with KGs in Banca d’Italia, we then focus on
+	                some relevant financial applications and explain how KGs
+	                enable the development of novel solutions, able to
+	                combine the knowledge mined from the data with the domain
+	                awareness of the business experts.},
+	booktitle = {Mining Data for Financial Applications},
+	publisher = {Springer International Publishing},
+	author = {Bellomarini, Luigi and Magnanimi, Davide and Nissl, Markus and
+	          Sallinger, Emanuel},
+	editor = {Bitetta, Valerio and Bordino, Ilaria and Ferretti, Andrea and
+	          Gullo, Francesco and Ponti, Giovanni and Severini, Lorenzo},
+	year = {2021},
+	pages = {119–134},
+	language = {en},
+}
 
- @article{Lu_Goi_Zhao_Wang_2025, title={Biomedical Knowledge Graph: A Survey of Domains, Tasks, and Real-World Applications}, url={http://arxiv.org/abs/2501.11632}, DOI={10.48550/arXiv.2501.11632}, abstractNote={Biomedical knowledge graphs (BKGs) have emerged as powerful tools for organizing and leveraging the vast and complex data found across the biomedical field. Yet, current reviews of BKGs often limit their scope to specific domains or methods, overlooking the broader landscape and the rapid technological progress reshaping it. In this survey, we address this gap by offering a systematic review of BKGs from three core perspectives: domains, tasks, and applications. We begin by examining how BKGs are constructed from diverse data sources, including molecular interactions, pharmacological datasets, and clinical records. Next, we discuss the essential tasks enabled by BKGs, focusing on knowledge management, retrieval, reasoning, and interpretation. Finally, we highlight real-world applications in precision medicine, drug discovery, and scientific research, illustrating the translational impact of BKGs across multiple sectors. By synthesizing these perspectives into a unified framework, this survey not only clarifies the current state of BKG research but also establishes a foundation for future exploration, enabling both innovative methodological advances and practical implementations.}, note={arXiv:2501.11632 [cs]}, number={arXiv:2501.11632}, publisher={arXiv}, author={Lu, Yuxing and Goi, Sin Yee and Zhao, Xukai and Wang, Jinzhuo}, year={2025}, month=jan }
+ @article{Lu_Goi_Zhao_Wang_2025,
+	title = {Biomedical Knowledge Graph: A Survey of Domains, Tasks, and
+	         Real-World Applications},
+	url = {http://arxiv.org/abs/2501.11632},
+	DOI = {10.48550/arXiv.2501.11632},
+	abstractNote = {Biomedical knowledge graphs (BKGs) have emerged as
+	                powerful tools for organizing and leveraging the vast and
+	                complex data found across the biomedical field. Yet,
+	                current reviews of BKGs often limit their scope to
+	                specific domains or methods, overlooking the broader
+	                landscape and the rapid technological progress reshaping
+	                it. In this survey, we address this gap by offering a
+	                systematic review of BKGs from three core perspectives:
+	                domains, tasks, and applications. We begin by examining
+	                how BKGs are constructed from diverse data sources,
+	                including molecular interactions, pharmacological
+	                datasets, and clinical records. Next, we discuss the
+	                essential tasks enabled by BKGs, focusing on knowledge
+	                management, retrieval, reasoning, and interpretation.
+	                Finally, we highlight real-world applications in
+	                precision medicine, drug discovery, and scientific
+	                research, illustrating the translational impact of BKGs
+	                across multiple sectors. By synthesizing these
+	                perspectives into a unified framework, this survey not
+	                only clarifies the current state of BKG research but also
+	                establishes a foundation for future exploration, enabling
+	                both innovative methodological advances and practical
+	                implementations.},
+	note = {arXiv:2501.11632 [cs]},
+	number = {arXiv:2501.11632},
+	publisher = {arXiv},
+	author = {Lu, Yuxing and Goi, Sin Yee and Zhao, Xukai and Wang, Jinzhuo},
+	year = {2025},
+	month = jan,
+}
+
+
+ % Graph Neural Networks
+
+@article{Explainable_GNNs,
+	title = {Can Graph Neural Networks be Adequately Explained? A Survey},
+	volume = {57},
+	ISSN = {0360-0300},
+	DOI = {10.1145/3711122},
+	abstractNote = {To address the barrier caused by the black-box nature of
+	                Deep Learning (DL) for practical deployment, eXplainable
+	                Artificial Intelligence (XAI) has emerged and is
+	                developing rapidly. While significant progress has been
+	                made in explanation techniques for DL models targeted to
+	                images and texts, research on explaining DL models for
+	                graph data is still in its infancy. As Graph Neural
+	                Networks (GNNs) have shown superiority over various
+	                network analysis tasks, their explainability has also
+	                gained attention from both academia and industry. However
+	                , despite the increasing number of GNN explanation
+	                methods, there is currently neither a fine-grained
+	                taxonomy of them, nor a holistic set of evaluation
+	                criteria for quantitative and qualitative evaluation. To
+	                fill this gap, we conduct a comprehensive survey on
+	                existing explanation methods of GNNs in this article.
+	                Specifically, we propose a novel four-dimensional
+	                taxonomy of GNN explanation methods and summarize
+	                evaluation criteria in terms of correctness, robustness,
+	                usability, understandability, and computational
+	                complexity. Based on the taxonomy and criteria, we
+	                thoroughly review the recent advances in GNN explanation
+	                methods and analyze their pros and cons. In the end, we
+	                identify a series of open issues and put forward future
+	                research directions to facilitate XAI research in the
+	                field of GNNs.},
+	number = {5},
+	journal = {ACM Comput. Surv.},
+	author = {Li, Xuyan and Wang, Jie and Yan, Zheng},
+	year = {2025},
+	month = jan,
+	pages = {131:1-131:36},
+}
+
+@inproceedings{GraphSAGE,
+	title = {Inductive Representation Learning on Large Graphs},
+	volume = {30},
+	url = {
+	       https://proceedings.neurips.cc/paper/2017/hash/5dd9db5e033da9c6fb5ba83c7a7ebea9-Abstract.html
+	       },
+	abstractNote = {Low-dimensional embeddings of nodes in large graphs have
+	                proved extremely useful in a variety of prediction tasks,
+	                from content recommendation to identifying protein
+	                functions. However, most existing approaches require that
+	                all nodes in the graph are present during training of the
+	                embeddings; these previous approaches are inherently
+	                transductive and do not naturally generalize to unseen
+	                nodes. Here we present GraphSAGE, a general, inductive
+	                framework that leverages node feature information (e.g.,
+	                text attributes) to efficiently generate node embeddings.
+	                Instead of training individual embeddings for each node,
+	                we learn a function that generates embeddings by sampling
+	                and aggregating features from a node’s local
+	                neighborhood. Our algorithm outperforms strong baselines
+	                on three inductive node-classification benchmarks: we
+	                classify the category of unseen nodes in evolving
+	                information graphs based on citation and Reddit post data
+	                , and we show that our algorithm generalizes to
+	                completely unseen graphs using a multi-graph dataset of
+	                protein-protein interactions.},
+	booktitle = {Advances in Neural Information Processing Systems},
+	publisher = {Curran Associates, Inc.},
+	author = {Hamilton, Will and Ying, Zhitao and Leskovec, Jure},
+	year = {2017},
+}
+
